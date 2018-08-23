@@ -169,6 +169,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "You are logged on ...", Toast.LENGTH_SHORT).show();
                 }else {
                     //USER ISNOT SIGNED IN
+                    //this to move to the login  or sign up activity
                     startActivityForResult(
                         AuthUI.getInstance()
                             .createSignInIntentBuilder()
